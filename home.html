@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Tracker - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="moodTracker">
+        <h1>Mood Tracker</h1>
+        <p>Log your mood and see your emotional journey!</p>
+        <form id="moodForm">
+            <select id="mood">
+                <option value="happy">Happy 😊</option>
+                <option value="sad">Sad 😢</option>
+                <option value="angry">Angry 😠</option>
+                <option value="neutral">Neutral 😐</option>
+            </select>
+            <button type="submit">Log Mood</button>
+        </form>
+        <div id="moodHistoryContainer">
+            <h2>Your Mood History</h2>
+            <ul id="moodHistory"></ul>
+        </div>
+        <button id="downloadBtn">Download Mood Logs as Excel</button>
+        <div style="margin-top: 10px;"></div> <!-- Add spacing -->
+        <button id="logoutBtn">Logout</button>
+    </div>
+
+    <div id="quotePopup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <p id="quoteText"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Stay positive! 🌟</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
